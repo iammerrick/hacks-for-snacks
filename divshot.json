@@ -1,0 +1,6 @@
+{
+  "name": "hacks-for-snacks",
+  "root": "compiled",
+  "clean_urls": true,
+  "error_page": "error.html"
+}
