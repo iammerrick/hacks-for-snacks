@@ -14,8 +14,8 @@ html
             div.Header__logo-wording-title HACKS for SNACKS
             div.Header__logo-wording-tagline "Hack" is a general word meaning to experiment, learn, make, code and know its ok to be wrong.
         div.Header__navigation
-          a(href='/index.html').active ABOUT US
-          a(href='/hackathons.html') HACKATHONS
+          a(href='/index.html', class= path == 'index.jade' ? 'active' : null) ABOUT US
+          a(href='/hackathons.html', class= path == 'hackathons.jade' ? 'active' : null) HACKATHONS
           a(href='mailto:info@hacksforsnacks.com') SPONSOR
 
       div.Content

@@ -13,5 +13,8 @@
     "gulp-autoprefixer": "^2.0.0",
     "gulp-jade": "^0.10.0",
     "gulp-mustache": "^1.0.1"
+  },
+  "dependencies": {
+    "gulp-data": "^1.1.1"
   }
 }
