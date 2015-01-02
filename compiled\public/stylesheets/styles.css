@@ -1,0 +1,133 @@
+.Hacks-For-Snacks {
+  font: 12px 'Lato';
+  color: #787A76;
+  padding: 16px;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.Header {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid #CACAC5;
+}
+
+.Header__logo {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 16px;
+}
+
+.Header__logo-wording {
+  margin: auto;
+  padding-left: 16px;
+}
+
+.Header__logo-wording-title {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.Header__logo-wording-tagline  {
+  color: #CACAC5;
+}
+
+.Header__navigation {
+  margin: auto 0px auto auto;
+}
+
+.Header__navigation a {
+  display: inline-block;
+  margin: 0 16px;
+  font-size: 14px;
+  color: #6A6A6A;
+  text-decoration: none;
+  box-sizing: border-box;
+  height: 24px;
+}
+
+.Header__navigation a:last-child {
+  margin-right: 0px;
+}
+
+.Header__navigation a:hover, .Header__navigation a.active {
+  border-bottom: 2px solid #97C53E;
+}
+
+.Header__dieter-the-robot {
+  width: 84px;
+  height: 130px;
+}
+
+.Hacks-Typography p, .Hacks-Typography ul, .Hacks-Typography ol {
+  line-height: 1.8em;
+}
+
+.Hacks-Typography a {
+  color: #97C53E;
+}
+
+.Content {
+  padding: 0 8px;
+}
+
+.Footer {
+  padding: 8px 0;
+  border-top: 1px solid #CACAC5; 
+  border-bottom: 1px solid #CACAC5;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.Footer__social {
+  margin: auto 0 auto auto;
+}
+
+.Footer__social a {
+  margin: 0 4px;
+}
+
+.Footer__social a:last-child {
+  margin-right: 0;
+}
+
+.Footer__social img {
+  width: 16px;
+  height: 16px;
+  opacity: 0.5;
+}
+@media (max-width: 940px) {
+  .Header {
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .Header__navigation {
+    margin: auto;
+    border-top: 1px solid #CACAC5;
+    width: 100%;
+    padding-top: 8px;
+    text-align: center;
+  }
+
+  .Header__logo {
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+
+  .Header__logo-wording {
+    padding: 8px 0;
+  }
+
+  .Header__dieter-the-robot {
+    margin: auto;
+    width: 207px;
+    height: 322px;
+  }
+}

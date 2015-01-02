@@ -14,8 +14,8 @@ gulp.task('default', function() {
     .pipe(jade({}))
     .pipe(gulp.dest('./compiled/'));
 
-  gulp.src('./src/public/**/*')
-    .pipe(gulp.dest('./compiled/public/'));
+  gulp.src('./src/public/images/**/*')
+    .pipe(gulp.dest('./compiled/public/images/'));
 
     gulp.src('./src/public/stylesheets/**/*.css')
       .pipe(autoprefixer({
