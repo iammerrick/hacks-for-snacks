@@ -14,6 +14,9 @@ gulp.task('default', function() {
     .pipe(jade({}))
     .pipe(gulp.dest('./compiled/'));
 
+  gulp.src('./src/favicon.ico')
+    .pipe(gulp.dest('./compiled/'));
+
   gulp.src('./src/public/images/**/*')
     .pipe(gulp.dest('./compiled/public/images/'));
 
