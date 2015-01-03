@@ -7,11 +7,15 @@
 }
 
 .Header {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   border-bottom: 1px solid #CACAC5;
 }
 
 .Header__logo {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   padding-bottom: 16px;
 }
@@ -66,13 +70,15 @@
 }
 
 .Content {
-  padding: 0 8px;
+  padding: 8px;
 }
 
 .Footer {
   padding: 8px 0;
   border-top: 1px solid #CACAC5; 
   border-bottom: 1px solid #CACAC5;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -93,9 +99,30 @@
   height: 16px;
   opacity: 0.5;
 }
+
+.Body {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.Content {
+  -webkit-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+}
+
+.Sidebar {
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
 @media (max-width: 940px) {
   .Header {
-    flex-direction: column;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 
   .Header__navigation {
@@ -107,7 +134,9 @@
   }
 
   .Header__logo {
-    flex-direction: column;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     text-align: center;
   }
 
