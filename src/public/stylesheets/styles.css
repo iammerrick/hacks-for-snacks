@@ -13,6 +13,8 @@
 
 .Header__logo {
   display: flex;
+  color: #787A76;
+  text-decoration: none;
   padding-bottom: 16px;
 }
 
@@ -36,7 +38,7 @@
 
 .Header__navigation a {
   display: inline-block;
-  margin: 0 16px;
+  margin: 0 8px;
   font-size: 14px;
   color: #6A6A6A;
   text-decoration: none;
@@ -107,6 +109,10 @@
 }
 
 @media (max-width: 940px) {
+  .Body {
+    flex-direction: column-reverse;
+  }
+
   .Header {
     flex-direction: column;
   }
