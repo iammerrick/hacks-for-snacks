@@ -1,5 +1,5 @@
 .Hacks-For-Snacks {
-  font: 12px 'Lato';
+  font: 18px 'Lato';
   color: #787A76;
   padding: 16px;
   max-width: 1024px;
@@ -29,6 +29,7 @@
 }
 
 .Header__logo-wording-tagline  {
+  font-size: 14px;
   color: #CACAC5;
 }
 
@@ -39,7 +40,7 @@
 .Header__navigation a {
   display: inline-block;
   margin: 0 8px;
-  font-size: 14px;
+  font-size: 16px;
   color: #6A6A6A;
   text-decoration: none;
   box-sizing: border-box;
@@ -108,6 +109,76 @@
   flex: 1;
 }
 
+
+.Registration {
+  display: flex;
+  margin-bottom: 32px;
+}
+
+.Registration-Form .Bold{
+  font-weight: bold;
+  padding-bottom: 8px;
+  display: block;
+}
+
+.Registration-Form input[type="text"] {
+  border: 1px solid #CACAC5;
+  max-width: 472px;
+  width: 100%;
+}
+
+input.Registration-Age[type="text"] {
+  width: 100px;
+}
+
+.Registration-Submit {
+  width: 128px;
+  height: 52px;
+  background-color: #AAAAAA;
+  color: #FFF;
+  font-weight: bold;
+  border: 0;
+  border-radius: 4px;
+}
+
+.Registration-Radio {
+  padding-bottom: 8px;
+}
+
+.Registration-Form input[type="radio"] {
+  margin-right: 16px;
+}
+
+.Registration-Input {
+  margin-bottom: 16px;
+}
+
+.Registration-Form {
+  flex: 2;
+  padding-right: 32px;
+  border-right: 1px solid #CACAC5;
+}
+
+.Registration-Information {
+  flex: 2;
+  padding-left: 32px;
+}
+
+.Registration-Information h5 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.Registration-Information p {
+  margin-top: 8px;
+}
+
+.Registration-Information h5:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
 @media (max-width: 940px) {
   .Body {
     flex-direction: column-reverse;
@@ -138,5 +209,21 @@
     margin: auto;
     width: 207px;
     height: 322px;
+  }
+
+  .Registration  {
+    flex-direction: column;
+  }
+
+  .Registration-Form  {
+    border-right: 0;
+    padding-right: 0;
+    border-bottom: 1px solid #CACAC5;
+    padding-bottom: 32px;
+  }
+
+  .Registration-Information {
+    padding-left: 0;
+    padding-top: 32px;
   }
 }

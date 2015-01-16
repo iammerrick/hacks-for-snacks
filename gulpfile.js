@@ -20,6 +20,9 @@ gulp.task('default', function() {
   gulp.src('./src/public/images/**/*')
     .pipe(gulp.dest('./compiled/public/images/'));
 
+  gulp.src('./src/public/scripts/**/*')
+    .pipe(gulp.dest('./compiled/public/scripts/'));
+
     gulp.src('./src/public/stylesheets/**/*.css')
       .pipe(autoprefixer({
         browsers: ['last 2 versions']

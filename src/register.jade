@@ -1,0 +1,52 @@
+extends ./layouts/default
+
+block content
+  div.Content
+    div.Hacks-Typography
+      h1 Hacks for Snacks + Ogden
+      p We invite your child to come and explore the exciting world of programming and robotics. They will receive personal mentorship and guidance from local professionals and leave with excitement and skills for a future of creating! 
+    div.Registration
+      div.Registration-Form(ng-app='Registration', ng-controller='RegistrationForm', ng-submit='submit($event)')
+
+        div(ng-if='errors.length > 0')
+          p(ng-repeat='error in errors') {{error}}
+        div(ng-if='hidden') Thank you, anticipate hearing from us shortly!
+        form(ng-if='!hidden')
+          div.Registration-Input
+            label.Bold Parent / Guardian Email
+            input(type='text', ng-model='registration.email')
+          div.Registration-Input
+            label.Bold Child's Name
+            input(type='text', ng-model='registration.name')
+          div.Registration-Input
+            label.Bold Child's Age
+            input(type='text', ng-model='registration.age').Registration-Age
+          div.Registration-Input
+            label.Bold How much programming has the child done?
+            div.Registration-Radio
+              input(type='radio', name='exposure', ng-model='registration.exposure', value='1')
+              label None
+            div.Registration-Radio
+              input(type='radio', name='exposure', ng-model='registration.exposure', value='2')
+              label A little
+            div.Registration-Radio
+              input(type='radio', name='exposure', ng-model='registration.exposure', value='3')
+              label A lot
+          div
+            input(type='Submit').Registration-Submit
+      div.Registration-Information
+        h5 Date & Time
+        p.
+          March 28, 2015<br>
+          10:00 AM - 2:00 PM
+        h5 Location
+        p. 
+          Startup Ogden<br>
+          2314 Washington Blvd., Ogden, Utah<br>
+          http://www.weber.edu/downtown 
+  script(src='https://ajax.googleapis.com/ajax/libs/angularjs/1.3.9/angular.min.js')
+  script(src='/public/scripts/registration.js')
+
+      
+      
+
