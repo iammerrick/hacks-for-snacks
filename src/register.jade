@@ -8,7 +8,7 @@ block content
     div.Registration
       div.Registration-Form(ng-app='Registration', ng-controller='RegistrationForm', ng-submit='submit($event)')
 
-        div(ng-if='errors.length > 0')
+        div.Registration-Errors(ng-if='errors.length > 0')
           p(ng-repeat='error in errors') {{error}}
         div(ng-if='hidden') Thank you, anticipate hearing from us shortly!
         form(ng-if='!hidden')
