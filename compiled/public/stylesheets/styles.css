@@ -86,7 +86,7 @@
 }
 
 .FloatRightImage {
-  float:right;
+  float: right;
 }
 
 .Footer {
@@ -280,6 +280,10 @@ input.Registration-Age[type="text"] {
     padding-top: 32px;
   }
   
+}
+
+
+@media (max-width: 640px) {
   .FloatRightImage {
     float: inherit;
     margin: 8px 0;
