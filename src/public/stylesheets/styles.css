@@ -76,6 +76,15 @@
   padding: 8px;
 }
 
+.ContentImage {
+  max-width: 100%;
+  margin: 8px;
+}
+
+.FloatRightImage {
+  float:right;
+}
+
 .Footer {
   padding: 8px 0;
   border-top: 1px solid #CACAC5; 
@@ -110,6 +119,7 @@
 }
 
 .Sidebar {
+  margin-left: 16px;
   flex: 1;
 }
 
@@ -242,5 +252,10 @@ input.Registration-Age[type="text"] {
   .Registration-Information {
     padding-left: 0;
     padding-top: 32px;
+  }
+  
+  .FloatRightImage {
+    float: inherit;
+    margin: 8px 0;
   }
 }
