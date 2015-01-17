@@ -109,6 +109,11 @@
   flex: 1;
 }
 
+.SidebarEmailForm {
+  border-bottom: 1px solid #CACAC5;
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+}
 
 .Registration {
   display: flex;
@@ -189,7 +194,7 @@ input.Registration-Age[type="text"] {
 
 @media (max-width: 940px) {
   .Body {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
 
   .Header {
