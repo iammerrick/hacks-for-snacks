@@ -6,6 +6,10 @@
   margin: 0 auto;
 }
 
+.Hacks-For-Snacks a {
+  color: #787A76;
+}
+
 .Header {
   display: -webkit-flex;
   display: -ms-flexbox;
