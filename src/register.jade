@@ -41,6 +41,18 @@ block content
             div.Registration-Radio
               input(type='radio', name='exposure', ng-model='registration.exposure', value='3')
               label A lot
+          div.Registration-Input
+            label.Bold How'd you hear about us?
+            select(name='referral', ng-model='registration.referral')
+              option(value='Word of Mouth') Word of Mouth
+              option(value='Flier') Flier
+              option(value='Facebook') Facebook
+              option(value='Twitter') Twitter
+              option(value='Hacks for Snacks Website') Hacks for Snacks Website
+              option(value='Other') Other
+          div.Registration-Input(ng-if='registration.referral === "Other"')
+            label.Bold Other, eh? Mind telling us how?
+            input(type='text', name='referral-other', ng-model='registration.referralOther')
           div
             input(type='Submit').Registration-Submit
       div.Registration-Information
